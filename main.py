@@ -58,7 +58,7 @@ while run:
         if question == "y":
             pyperclip.copy(result)
             print("Code copied!")
-        run = using()
+
 
     elif mode == "2":
         if result:
@@ -74,9 +74,10 @@ while run:
             code = input("Input your code:\n").strip()
             print(f"Your converted morse to text is:\n{translate(code)}")
 
-        run = using()
     else:
         os.system("cls")
         print("That's not a valid option! Please put options only with numbers 1 or 2!")
+
+    run = using()
 
 print("Goodbye! 👋")
