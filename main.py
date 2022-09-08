@@ -3,7 +3,7 @@ from dictionary import letter_dict
 import pyperclip
 
 # Morse code translator
-print("Welcome to the Morse Code translator!\n")
+print("Welcome to the Morse Code translator! 📄\n")
 
 
 # Convertor Function
@@ -54,7 +54,7 @@ while run:
         text = input("Input your text:\n").lower().strip()
         result = convert(text)
         print(f"Your converted text to morse is:\n\n{result}")
-        question = input("Do you wish to copy the code to clipboard? (Y/N)").lower().strip()
+        question = input("Do you wish to copy the code to clipboard? (Y/N)\n").lower().strip()
         if question == "y":
             pyperclip.copy(result)
             print("Code copied!")
@@ -62,7 +62,7 @@ while run:
 
     elif mode == "2":
         if result:
-            answer = input("Do you wish to translate your last encoded message for checking?(Y/N)").lower().strip()
+            answer = input("Do you wish to translate your last encoded message for checking?(Y/N)\n").lower().strip()
             if answer == "y":
                 print(f"Your converted morse to text is:\n{translate(result)}")
 
